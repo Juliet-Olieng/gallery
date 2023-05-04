@@ -1,0 +1,215 @@
+ul{
+    display: flex;
+}
+span{
+    font-weight: bold;
+}
+nav{
+    margin-left: 20%;
+}
+
+nav ul li{
+    /* display:flex; */
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom:-6px ;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+#p{
+    font-size: 30px;
+}
+#img{
+    width: 150%;
+    height: 50Vh;
+}
+.content{
+    background-color: rgb(133, 133, 240);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    /* background-position: 100%; */
+    /* width: 100%; */
+    height: 500px;
+}
+.text-head{
+    margin-top: 160px;
+    margin-left: 20%;
+}
+.container2{
+    padding: 5%;
+
+}
+#text{
+    margin-left: 50%;
+}
+#text2{
+    display: flex;
+    gap: 100px;
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+.images{
+    margin-left: 50px;
+    display: flex;
+    gap: 100px;
+}
+#icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 100px;
+}
+.clothes{
+    display: flex;
+}
+#clothes{
+    margin-left: 50px;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 1%;
+}
+#img2{
+    width: 500px;
+    height: 400px;
+}
+#sho{
+    height: 100px;
+    padding:10%; 
+    gap: 50px;
+}
+.word{
+    text-align: center;
+}
+#p2{
+    color: gray;
+
+}
+#last{
+    width: 100%; 
+    height: 500px;  
+}
+.footer{
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+
+}
+button{
+    background-color: rgb(196, 97, 130);
+    color: white;
+    border: none;
+    border-radius: 3%;
+    margin: 3%;
+    padding: 3%;
+}
+#btn{
+    margin-left: 400px;
+}
+@media screen and(max-width:800px){
+    nav{
+        display: flex;
+        justify-content: left;
+    }
+    
+    nav ul li{
+        margin: 0.5%;
+   }
+    #p{
+        font-size: 20px;
+    }
+    #img{
+        width: 10%;
+        height: 10vh;
+    }
+    .content{
+        /* gap: 1%; */
+        height: 50%;
+        width: 40%;
+    }
+    .text-head{
+        margin-top: 160px;
+        /* margin-left: 20%; */
+    }
+    .container2{
+        padding: 1%;
+    
+    }
+    #text{
+        margin-left: 1%;
+    }
+    #text2{
+        gap:1%;
+    }
+    img{
+        width: 50Vh;
+        height: 100px;
+    }
+    .images{
+        grid-template-rows: 1r;
+        margin-left: 1px; 
+        gap: 1px;
+    }
+    #icon{
+        width: 20px;
+        height: 20px;
+        /* margin-top: 100px; */
+    }
+    #clothes{
+        margin-left: 1px;
+        height: 300px;
+        margin-bottom: 5px;
+    }
+    #img2{
+        width: 30Vh;
+        height: 300px;
+    }
+    #sho{
+        height: 150px;
+    
+    }
+    #sho1{
+        height: 100Vh;
+    }
+    #p2{
+        color: gray;
+    }
+    #last{
+        width: 100%; 
+        height: 500px;  
+    }
+    .footer{
+        gap: 5px;
+        margin-left: 2px;
+    
+    }
+    button{
+
+        border-radius: 3%;
+        margin: 3%;
+        padding: 3%;
+    }
+    #btn{
+        margin-left: 10px;
+    }    
+}
